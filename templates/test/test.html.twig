@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<body>
+    <h1>Test Page</h1>
+    {{ message }}
+    {{ form(form) }}
+
+<script>
+    let newField = document.getElementById('test_extraFieldChoice');
+    for (let i=0; i < 5; i++) {
+        newField.options[newField.options.length] = new Option(`test${i}`, `test${i}`);
+    }
+</script>
+</body>
+</html>
